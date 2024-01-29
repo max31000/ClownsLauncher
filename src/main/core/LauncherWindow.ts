@@ -79,7 +79,7 @@ export class LauncherWindow {
             resizable: windowConfig.resizable || false,
             maximizable: windowConfig.maximizable || false,
             fullscreenable: windowConfig.fullscreenable || false,
-            title: windowConfig.title || 'Aurora Launcher',
+            title: windowConfig.title || 'Clowns Launcher',
             icon: join(__dirname, logo), // TODO Check no img (maybe use mainWindow.setIcon())
             webPreferences: {
                 preload: join(__dirname, '../preload/index.js'),
