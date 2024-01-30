@@ -15,3 +15,5 @@ export const api = {
     web: 'https://minecraftlauncher.xddnetwork.keenetic.link',
     // extraToken: token,
 };
+
+export const appPath = '.aurora-launcher';

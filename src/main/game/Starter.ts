@@ -86,7 +86,16 @@ export class Starter {
             );
         }
 
-        jvmArgs.push(...clientArgs.jvmArgs);
+        jvmArgs.push(
+            ...clientArgs.jvmArgs.map((arg) =>
+                arg
+                    .replaceAll(
+                        '${library_directory}',
+                        StorageHelper.librariesDir,
+                    )
+                    .replaceAll('${classpath_separator}', delimiter),
+            ),
+        );
 
         jvmArgs.push('-cp', classPath.join(delimiter));
         jvmArgs.push(clientArgs.mainClass);
@@ -97,7 +106,7 @@ export class Starter {
         await this.javaManager.checkAndDownloadJava(clientArgs.javaVersion);
 
         const gameProccess = spawn(
-            this.javaManager.getJavaPath(clientArgs.javaVersion),
+            await this.javaManager.getJavaPath(clientArgs.javaVersion),
             jvmArgs,
             { cwd: clientDir },
         );

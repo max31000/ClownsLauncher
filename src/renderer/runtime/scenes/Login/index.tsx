@@ -47,6 +47,8 @@ export default function Login() {
         }
 
         setTitlebarUserText(userData.username);
+        // Поддержка загрузки и отображения скина
+        // localStorage.setItem('userUUID', userData.userUUID);
         showTitlebarUser();
         navigate('ServersList');
     };
@@ -54,7 +56,7 @@ export default function Login() {
     return (
         <div className={classes.block}>
             <img src={logo} />
-            <div>Clowns Launcher</div>
+            <div>Aurora Launcher</div>
             <p>
                 Введите логин и пароль,
                 <br />
