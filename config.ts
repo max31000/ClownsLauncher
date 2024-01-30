@@ -11,7 +11,7 @@ export const window = {
 };
 
 export const api = {
-    ws: process.env["WS_DOMAIN"],
-    web: process.env["HTTP_DOMAIN"],
+    ws: 'wss://minecraftlauncher.xddnetwork.keenetic.link/ws',
+    web: 'https://minecraftlauncher.xddnetwork.keenetic.link',
     // extraToken: token,
 };
