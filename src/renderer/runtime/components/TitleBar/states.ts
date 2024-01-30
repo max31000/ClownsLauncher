@@ -11,7 +11,7 @@ export const titlebarTitle = atom({
     key: 'titlebar.title',
     default: {
         show: true,
-        text: 'ClownsLauncher v0.0.4-rc.2a',
+        text: 'ClownsLauncher v0.0.4-rc.2b',
     },
 });
 
