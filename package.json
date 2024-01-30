@@ -1,5 +1,5 @@
 {
-    "name": "aurora-launcher-app",
+    "name": "clowns-launcher-app",
     "version": "0.0.4-rc.2b",
     "description": "Launcher for Minecraft",
     "main": "build/main/index.js",
@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AuroraTeam/Launcher.git"
+        "url": "git+https://github.com/max31000/ClownsLauncher.git"
     },
     "author": "AuroraTeam",
     "contributors": [
@@ -32,9 +32,9 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/AuroraTeam/Launcher/issues"
+        "url": "https://github.com/max31000/ClownsLauncher/issues"
     },
-    "homepage": "https://github.com/AuroraTeam/Launcher#readme",
+    "homepage": "https://github.com/max31000/ClownsLauncher#readme",
     "devDependencies": {
         "@aurora-launcher/esbuild-decorators": "^0.0.1",
         "@types/node": "^18.17.15",
@@ -89,7 +89,7 @@
     },
     "build": {
         "appId": "clowns.ru.aurora.launcher",
-        "productName": "Clowns aurora Launcher",
+        "productName": "Clowns Launcher",
         "publish": [
             {
                 "provider": "github",
