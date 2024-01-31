@@ -1,6 +1,6 @@
 {
     "name": "clowns-launcher-app",
-    "version": "0.0.4-rc.2b",
+    "version": "0.0.4-rc.3a",
     "description": "Launcher for Minecraft",
     "main": "build/main/index.js",
     "private": true,
